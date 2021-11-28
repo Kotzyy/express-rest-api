@@ -4,7 +4,7 @@ secure = require('ssl-express-www');
 let PORT = process.env.PORT || 8080 || 5000 || 3000
 let { color } = require('./lib/color.js')
 
-const home = require('./routes/main'),
+let home = require('./routes/main'),
 
 let app = express()
 app.enable('trust proxy');
