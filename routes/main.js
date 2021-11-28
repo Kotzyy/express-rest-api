@@ -1,5 +1,6 @@
 __path = process.cwd()
-let express = require('express');
+const express = require('express');
+const router = express.Router();
 let db = require(__path + '/database/db');
 try {
 let KotzGanz = db.get("api2");
@@ -15,9 +16,9 @@ router.get('/', (req, res) => {
     res.status(200).json({
     	status: false,
     	message: "Sorry, the page you are looking for doesn't exist",
-        feature: {
+      feature: {
         	herordetail: https://" + req.hostname + "/herodetail?query=Zilong"
-        	}
+      }
 })
 })
 
