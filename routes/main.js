@@ -7,7 +7,6 @@ let KotzGanz = db.get("api2");
 } catch (e) {
 	console.log('')  
 }
-let router = express.Router();
 
 // Scrapernya
 const { herodetails } = require(__path + '/plugin/herodetail')
