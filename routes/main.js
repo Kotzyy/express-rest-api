@@ -1,12 +1,6 @@
 __path = process.cwd()
 const express = require('express');
 const router = express.Router();
-let db = require(__path + '/database/db');
-try {
-let KotzGanz = db.get("api2");
-} catch (e) {
-	console.log('')  
-}
 
 // Scrapernya
 const { herodetails } = require(__path + '/plugin/herodetail')
