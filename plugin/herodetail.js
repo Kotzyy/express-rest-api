@@ -1,6 +1,5 @@
 /*
-Author : Kotzyy
-Github : github.com/Kotzyy
+Gatau cmn nyolong
 */
 
 const cheerio = require('cheerio');
