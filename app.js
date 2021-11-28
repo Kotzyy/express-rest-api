@@ -9,6 +9,7 @@ let home = require('./routes/main');
 
 app.enable('trust proxy');
 app.set("json spaces",2);
+app.use(express.json())
 app.use(cors());
 app.use(secure);
 
